@@ -20,14 +20,15 @@
             gap: 20px;
             
             input{
-                padding: 20px;
+                padding: 40px;
                 border: none;
                 outline: none;
                 background-color: rgba(17, 25,40,0.6);
                 color: white;
                 border-radius: 5px;
-
+                font-size: 20px;
             }
+
             button{
                 width: 60%;
                 padding: 20px;
@@ -37,6 +38,7 @@
                 border-radius: 5px;
                 cursor: pointer;
                 font-weight: 500;
+                font-size: 18px;
 
                 &:disabled{
                     cursor: not-allowed;
@@ -46,18 +48,22 @@
 
             label{
                 width: 100%;
-                display: flex;
+                display: block;         /* label 占据整个宽度 */
+                text-align: center; 
                 align-items: center;
                 justify-content: space-between;
                 cursor: pointer;
                 text-decoration: underline;
+                opacity: 60%;
 
                 img{
-                    width: 50px;
-                    height: 50px;
+                    width: 150px;
+                    height: 150px;
                     border-radius: 10px;
                     object-fit: cover;
-                    opacity: 60%;
+                    opacity: 80%;
+                    display: block;         /* 让图片占据一整行 */
+                    margin: 0 auto;
                 }
             }
         }
